@@ -12,8 +12,7 @@
         }
     
         .Menu-right{
-    position: absolute;
-    right: 50px;
+    vertical-align: middle;
         }
         .Menu-left{
     font-weight: bold;
@@ -35,17 +34,14 @@
     
         .email{
             display: inline-block;
-            margin-top: 80px;
+           color:rgb(207, 141, 216);
             font-size: 25px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            width: fit-content;
-    
         }
         .search{
             font-size: 25px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: auto;
-            width: fit-content;
+           color:rgb(207, 141, 216) ;
         }
         .banner{
             width: 100%;
@@ -72,13 +68,14 @@
          text-align: center;
      }
      .sunsets-card{
-         border: 1px solid palevioletred;
+         border: 1px solid rgb(252, 140, 177);
          width: 25%;
          min-width: 250px;
          padding: 15px;
          text-align: center;
          border-radius: 20px;
          box-shadow: 0px 10px 30px 0px rgba(250, 65, 93, 0.6);
+         margin-bottom: 30px;
      }
      .card-button{
          color: rgb(255, 55, 138) !important;
@@ -95,6 +92,59 @@
          }
      .footer{
          padding: 100px 15px;
-         background:  rgba(235, 104, 180, 1);
-        
+         background: rgb(245, 153, 217);
+         background-image: url(8.jpg);
+         background-size: cover;
+         color: antiquewhite;   
      }
+     .main-sunsets{
+         display: flex;
+         justify-content:space-evenly;
+         flex-wrap: wrap;
+     }
+     .form-text{
+         border: none;
+         border-radius: 15px;
+         font-size: 15px;
+         padding: 10px 15px;
+         outline: none;
+     }
+     .form-button{
+         border: none;
+         border-radius: 15px;
+         font-size: 15px;
+         outline: none;
+         cursor: pointer;
+         background: pink;
+         color: aliceblue;
+         width: 150px;
+         padding: 10px 15px;
+     }
+     .copyright{
+         margin-top: 60px;
+         color:rgb(207, 141, 216);
+     }
+.socials{
+    display: flex;
+}
+.socials img {
+width: 50px;
+}
+.socials a {
+margin-left: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.content{
+height: 350px;
+}
+.Menu-left img {
+height: 30px;
+width: 30px;
+}
+.logo-text{
+    vertical-align: middle;
+}
