@@ -9,6 +9,7 @@
     font-size: 25px;
     padding: 15px;
     border-bottom: 2px solid rgb(99, 247, 247);
+    z-index: 10001;
         }
     
         .Menu-right{
@@ -147,4 +148,45 @@ width: 30px;
 }
 .logo-text{
     vertical-align: middle;
+}
+.item-window {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background: rgba(0,0,0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.item-content{
+    width: 60%;
+    min-width: 500px;
+    height: 470px;
+    background: rgb(252, 188, 252);
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.item-close{
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.iteem-close:hover {
+    opacity: 0.7;
+}
+.item-info{
+    display: flex;
+    justify-content: space-between;
+}
+.item-img{
+    height: 360px;
+}
+.item-header{
+    text-align: center;
 }
