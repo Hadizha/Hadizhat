@@ -5,11 +5,12 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     font-size: 25px;
     padding: 15px;
     border-bottom: 2px solid rgb(99, 247, 247);
     z-index: 10001;
+    display: flex;
+    justify-content: space-between;
         }
     
         .Menu-right{
@@ -50,6 +51,7 @@
             background-size: cover;
             background-image: url(4.gif);
             text-align: center;
+            background-position: center;
         }
         .banner-title{
     display: inline-block;
@@ -160,7 +162,7 @@ width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    display: none;
 }
 .item-content{
     width: 60%;
@@ -189,4 +191,51 @@ width: 30px;
 }
 .item-header{
     text-align: center;
+}
+.Menu-right img {
+    height: 22px;
+    vertical-align: middle;
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .Menu-right a {
+        padding: 8px;
+    }
+    .Menu-right img {
+        display: inline;
+    }
+    .Menu-right {
+        margin-right: 25px;
+    }
+    .content{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .content iframe{
+        width: 350px;
+        height: 200px;
+    }
+    .forms {
+        margin-bottom: 25px;
+    }
+    .card-image img {
+        width: 220px;
+    }
+    .mobile-menu{
+        position: absolute;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        display: flex;
+        background: rgba(235, 104, 180, 1);
+        text-align: center;
+        top: 70px;
+        display: none;
+    }
+}
+.main-header h1{
+    color: rgb(250, 19, 161);
+}
+.main-header p{
+    color: rgb(247, 46, 170);
 }
