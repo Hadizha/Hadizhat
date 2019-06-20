@@ -200,6 +200,7 @@ width: 30px;
 @media screen and (max-width: 600px) {
     .Menu-right a {
         padding: 8px;
+        display: block;
     }
     .Menu-right img {
         display: inline;
